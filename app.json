@@ -1,30 +1,48 @@
 {
   "expo": {
-    "name": "niigo-react-native-template",
+    "name": "Niigo",
     "slug": "niigo-react-native-template",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/icon.png",
+    "icon": "./assets/images/logo/niigoicon.png",
     "userInterfaceStyle": "light",
     "splash": {
-      "image": "./assets/splash.png",
+      "image": "./assets/images/splash/niigosplash.png",
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
-    "assetBundlePatterns": [
-      "**/*"
-    ],
+    "packagerOpts": {
+      "config": "metro.config.js",
+      "sourceExts": ["js", "jsx", "ts", "tsx"]
+    },
+    "assetBundlePatterns": ["**/*"],
     "ios": {
       "supportsTablet": true
     },
     "android": {
       "adaptiveIcon": {
-        "foregroundImage": "./assets/adaptive-icon.png",
+        "foregroundImage": "./assets/images/logo/xxxhdpi-icon.png",
+        "backgroundColor": "#ffffff",
+        "mdpi": "./assets/images/logo/mdpi-icon.png",
+        "hdpi": "./assets/images/logo/hdpi-icon.png",
+        "xhdpi": "./assets/images/logo/xhdpi-icon.png",
+        "xxhdpi": "./assets/images/logo/xxhdpi-icon.png",
+        "xxxhdpi": "./assets/images/logo/xxxhdpi-icon.png"
+      },
+      "splash": {
+        "image": "./assets/images/splash/niigosplash.png",
+        "resizeMode": "contain",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "package": "com.sreehari_058.niigoreactnativetemplate"
     },
     "web": {
       "favicon": "./assets/favicon.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "b2d6024c-4ba6-4fc7-a42f-e1ca5b5daf0f"
+      }
     }
   }
 }
